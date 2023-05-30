@@ -1,20 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Group Project Memory Game</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Game</title>
+    <!-- link fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/9b59ce0d1e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="navbar">
+        <button class="tablinks" id="defaultOpen" data-target="home-page">
+          Home
+        </button>
+        <button class="tablinks" data-target="instructure">How to play</button>
+        <button class="tablinks" data-target="images">PowerTeam</button>
+        <button class="tablinks" data-target="game">Start Game</button>
+      </nav>
+      <section class="tab-container">
+        <article class="tabcontent contenttable" id="home-page">
+          <div class="home-page">
+            <h1 class="greetings">Welcome to Memory Game!</h1>
+            <h2>Are you ready to start? Hold on tight!</h2>
 
-
-<h2>yilmaz</h2>
-<h1>ümit2</h1>
-<h1>ersel</h1>
-<h1>ümit</h1>
-<h2>EEEEEEE</h2>
-    <script src="script.js"></script>
-</body>
+            <p class="welcome">
+              Welcome to the exciting world of the memory card game with
+              pictures! This timeless game is designed to test your
+              concentration, observation skills, and memory prowess. Get ready
+              to embark on a journey of matching pairs of colorful and
+              captivating images hidden beneath a grid of cards. Flip them over,
+              two at a time, and try to uncover matching pairs by remembering
+              their positions. The objective is simple: reveal all the pairs in
+              the shortest number of turns possible. Whether you're a child or
+              an adult, this game guarantees hours of fun, challenge, and brain
+              exercise. Sharpen your mind and enjoy the thrill of uncovering
+              stunning images in this classic memory card game!
+            </p>
+          </div>
+        </article>
+        <article class="tabcontent contenttable howtoplay" id="instructure">
+          Sure! Here are the instructions for a memory card game online: 
+          <br> 1.
+          Start the Game: - When the game starts, all cards are facedown on the
+          game board. <br> 2. Gameplay: - The player flips over two cards by clicking
+          on them. - If the two flipped cards match, they remain face-up and the
+          player earns points. - If the two flipped cards do not match, they are
+          flipped face-down again. - The player continues flipping cards until
+          all pairs are matched.<br> 3. Card Matching: - Cards can only be flipped
+          if they are face-down. - To flip a card, the player clicks on it. -
+          The player can only flip two cards at a time. - If two flipped cards
+          match, they remain face-up. - If two flipped cards do not match, they
+          are flipped face-down again.<br> 4. Scoring: - The player earns points for
+          each successful match. - The player can aim for a higher score by
+          completing the game in fewer moves.<br> 5. Game Completion: - The game is
+          completed when all cards are matched and face-up. - The player
+          receives a congratulations message and can choose to restart the game.
+          <br>6. Restarting the Game: - After completing the game or at any time
+          during gameplay, the player can choose to restart the game. -
+          Restarting the game shuffles the cards and resets the score.<br> 7. Time
+          Limit (Optional): - You can add a time limit to the game to increase
+          the challenge. - The player must complete the game before the time
+          runs out. Remember to provide clear instructions and user-friendly
+          interface for players to understand and enjoy the game.
+        </article>
+        <article class="tabcontent contenttable" id="images">
+          <div class="card-container">
+            <div class="card2">
+              <img src="./images2/Anastasia.jpg" alt="Resim 1" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Anna.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Burak.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Caner.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Denys.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Engin.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Erdogan.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Ersel.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Hamdi.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Harun.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Hüseyin.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Ivan.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Kingsley.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/latif.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Medhane.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Melek.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Merve.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Muhammet.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/MustafaC.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/MustafaG.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Nesrin.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Oana.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Sahin.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Simon.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Slava.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Susanne.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Sümeyra.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Tetiana.jpg" alt="Resim 2" />
+            </div>
+            <div class="card2">
+              <img src="./images2/Yilmaz.jpg" alt="Resim 2" />
+            </div>
+          </div>
+        </article>
+        <article class="tabcontent startgame " id="game">
+            <div class="wrapper">
+                <ul class="cards">
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Anastasia.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Anna.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Burak.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Caner.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Denys.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Anastasia.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Anna.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Burak.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Caner.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Denys.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Engin.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/E.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Erdogan.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Erdogan.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Ersel.jpg" alt="card-img">
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="view front-view">
+                      <img src="images2/powercoders.svg" alt="icon">
+                    </div>
+                    <div class="view back-view">
+                      <img src="images2/Ersel.jpg" alt="card-img">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+        </article>
+      </section>
+    </main>
+    <footer>&copy; PowerCoders 2023</footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
