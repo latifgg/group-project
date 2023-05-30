@@ -70,21 +70,44 @@ function matchCards(img1, img2) {
     }, 1200);
 }
 
-function shuffleCard() {
+let images = [];
+
+for (let i = 1; i <= 30; i++) {
+  let fileName = `images2/img-${i}.jpg`;
+  images.push(fileName);
+}
+
+function getRandomImages() {
+    let selectedImages = [];
+    while (selectedImages.length < 8) {
+      let randomIndex = Math.floor(Math.random() * images.length);
+      let randomImage = images[randomIndex];
+      if (!selectedImages.includes(randomImage)) {
+        selectedImages.push(randomImage);
+      }
+    }
+    return selectedImages;
+  }
+
+
+  function shuffleCard(images) {
     matched = 0;
     disableDeck = false;
     cardOne = cardTwo = "";
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
+    let arr = images.concat(images); // Her resmi 2 kez ekleyerek 16 elemanlı bir dizi oluşturuyoruz
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
     cards.forEach((card, i) => {
-        card.classList.remove("flip");
-        let imgTag = card.querySelector(".back-view img");
-        imgTag.src = `images/img-${arr[i]}.png`;
-        card.addEventListener("click", flipCard);
+      card.classList.remove("flip");
+      let imgTag = card.querySelector(".back-view img");
+      let fileName = arr[i].substring(7); // 
+      imgTag.src = "images2/" + fileName; 
+      card.addEventListener("click", flipCard);
     });
-}
+  }
+  
 
-shuffleCard();
+  let selectedImages = getRandomImages(); 
+  shuffleCard(selectedImages);
     
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
