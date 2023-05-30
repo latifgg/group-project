@@ -159,6 +159,7 @@ footer{
 }
 .card .back-view{
   transform: rotateY(-180deg);
+  background-color: aquamarine;
 }
 .card.flip .back-view{
   transform: rotateY(0);
