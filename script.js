@@ -179,22 +179,29 @@ function matchCards(img1, img2) {
 
 let images = [];
 
-for (let i = 1; i <= 31; i++) {
+for (let i = 1; i <= 32; i++) {
   let fileName = `images2/img-${i}.jpg`;
   images.push(fileName);
 }
 
 function getRandomImages() {
-    let selectedImages = [];
-    while (selectedImages.length < 16) {
-      let randomIndex = Math.floor(Math.random() * images.length);
-      let randomImage = images[randomIndex];
-      if (!selectedImages.includes(randomImage)) {
-        selectedImages.push(randomImage);
+  let selectedImages = [];
+  let imageCount = 0;
+  while (selectedImages.length < 30) {
+    let randomIndex = Math.floor(Math.random() * images.length);
+    let randomImage = images[randomIndex];
+    if (!selectedImages.includes(randomImage)) {
+      selectedImages.push(randomImage);
+      imageCount++;
+      if (imageCount === 15) {
+        selectedImages.push(randomImage); // İkinci kez aynı resmi ekle
+        imageCount = 0; // Resim sayacını sıfırla
       }
     }
-    return selectedImages;
   }
+  return selectedImages;
+}
+
 
 
   function shuffleCard(images) {
