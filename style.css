@@ -52,6 +52,45 @@ h1 {
   box-shadow: rgb(112, 111, 111) 0px 5px 15px;
   cursor: pointer;
 }
+/* fa stars */
+.fa-star {
+  color: #fbed60;
+}
+/* .fa-undo {
+  padding: 0 20% 20% 20%;
+}
+
+.message-box .fa-undo {
+  padding: 10%;
+} */
+
+.fa-undo:hover {
+  cursor: pointer;
+}
+.game {
+  max-width: 550px;
+  margin: auto;
+}
+.stats {
+  margin: 30px 0 10px 0;
+}
+
+ul.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+
+}
+
+ul.stats li {
+  display: inline-block;
+  padding: 5px;
+  width: 25%;
+}
 
 
 .contenttable {

@@ -28,15 +28,52 @@
         </div>  
       </nav>
     <!-- NAVBAR END -->
+    <nav class="navbar">
+      <header>
+        <h1>PoCo Memory Card Game</h1>
+      </header>
+      <div class="btns">
+        <button class="tablinks" id="defaultOpen" data-target="home-page">
+          Home
+        </button>
+        <button class="tablinks" data-target="instructure">How to play</button>
+        <button class="tablinks" data-target="images">PowerTeam</button>
+        <button class="tablinks" data-target="game">Start Game</button>
+      </div>
+    </nav>
+    
     <main class="container">
+      <section class="game">
+        <ul class="stats">
+          <li id="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </li>
+          <li>
+            <p>Attempts</p>
+            <p id="attempts">0</p>
+          </li>
+          <li>
+            <i class="fas fa-hourglass-start"></i>
+            <p><span id="minutes">00</span>:<span id="seconds">00</span></p>
+          </li>
+          <li><i class="fas fa-undo"></i></li>
+        </ul>
+
+        <div id="memory-game"></div>
+      </section>
       <section class="tab-container">
       <!-- HOME START -->
         <article class="tabcontent contenttable" id="home-page">
           <div class="home-page">
             <h2 class="greetings">Welcome to Memory Game!</h2>
             <p class="welcome">
-             Introducing a thrilling memory card game with pictures! 
-             Test your concentration, observation, and memory skills as you match pairs of captivating images hidden beneath a grid. Flip cards, uncover matches, and aim to reveal all pairs in the fewest turns. Enjoy hours of fun and mental exercise with this classic game for all ages.
+              Introducing a thrilling memory card game with pictures! Test your
+              concentration, observation, and memory skills as you match pairs
+              of captivating images hidden beneath a grid. Flip cards, uncover
+              matches, and aim to reveal all pairs in the fewest turns. Enjoy
+              hours of fun and mental exercise with this classic game for all
+              ages.
             </p>
           </div>
         </article>
@@ -50,7 +87,10 @@
             <li>If the cards match, they stay face-up and you earn points.</li>
             <li>If the cards don't match, they flip back facedown.</li>
             <li>Keep flipping cards until all pairs are matched.</li>
-            <li>Be more successful by completing the game in fewer attemps and in a shortest time.</li>
+            <li>
+              Be more successful by completing the game in fewer attemps and in
+              a shortest time.
+            </li>
             <li>Restart the game to shuffle the cards and reset the score.</li>
           </ol>
         </article>
@@ -58,6 +98,7 @@
 
         <!-- IMAGES START -->
         <article class="tabcontent contenttable" id="images">
+
           <div class="card-container">
           </div>
         </article>
@@ -317,6 +358,255 @@
           <!-- CARDS END-->  
           </article>
           <!-- START GAME TAB END -->
+
+          <div class="card-container"></div>
+        </article>
+        <article class="tabcontent startgame" id="game">
+          <div class="wrapper">
+            <ul class="cards">
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-2.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-3.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-4.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-5.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-6.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-7.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-8.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-9.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-10.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-1.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-2.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-3.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-4.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-5.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-6.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-7.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-7.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-8.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-8.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-9.jpg" alt="card-img" />
+                </div>
+              </li>
+              <li class="card">
+                <div class="view front-view">
+                  <img src="images2/powercoders.svg" alt="icon" />
+                </div>
+                <div class="view back-view">
+                  <img src="images2/img-10.jpg" alt="card-img" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
       </section>
     </main>
     <footer>&copy; PowerCoders 2023</footer>
