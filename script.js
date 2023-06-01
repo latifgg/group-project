@@ -1,3 +1,109 @@
+const imageList = [
+  {
+    img: "images2/img-1.jpg"
+  },
+  {
+    img: "images2/img-2.jpg"
+  },
+  {
+    img: "images2/img-3.jpg"
+  },
+  {
+    img: "images2/img-4.jpg"
+  },
+  {
+    img: "./images2/img-5.jpg"
+  },
+  {
+    img: "./images2/img-6.jpg"
+  },
+  {
+    img: "./images2/img-7.jpg"
+  },
+  {
+    img: "./images2/img-8.jpg"
+  },
+  {
+    img: "./images2/img-9.jpg"
+  },
+  {
+    img: "./images2/img-10.jpg"
+  },
+  {
+    img: "./images2/img-11.jpg"
+  },
+  {
+    img: "./images2/img-12.jpg"
+  },
+  {
+    img: "./images2/img-13.jpg"
+  },
+  {
+    img: "./images2/img-14.jpg"
+  },
+  {
+    img: "./images2/img-15.jpg"
+  },
+  {
+    img: "./images2/img-16.jpg"
+  },
+  {
+    img: "./images2/img-17.jpg"
+  },
+  {
+    img: "./images2/img-18.jpg"
+  },
+  {
+    img: "./images2/img-19.jpg"
+  },
+  {
+    img: "./images2/img-20.jpg"
+  },
+  {
+    img: "./images2/img-21.jpg"
+  },
+  {
+    img: "./images2/img-22.jpg"
+  },
+  {
+    img: "./images2/img-23.jpg"
+  },
+  {
+    img: "./images2/img-24.jpg"
+  },
+  {
+    img: "./images2/img-25.jpg"
+  },
+  {
+    img: "./images2/img-26.jpg"
+  },
+  {
+    img: "./images2/img-27.jpg"
+  },
+  {
+    img: "./images2/img-28.jpg"
+  },
+  {
+    img: "./images2/img-29.jpg"
+  },
+  {
+    img: "./images2/img-30.jpg"
+  },
+  {
+    img: "./images2/img-31.jpg"
+  }
+]
+
+let cardContainer= document.querySelector(".card-container");
+imageList.map((item) =>{
+  const cardDiv= document.createElement("div");
+  cardDiv.className="card2"
+  const img = document.createElement('img');
+  img.src = item.img;
+  cardDiv.appendChild(img);
+  return cardContainer.appendChild(cardDiv);
+})
+
 //call all the buttons which is in the first tab and add eventlistener
 const firstOpenTabsButtons = document.querySelectorAll(".tablinks");
 firstOpenTabsButtons.forEach((button) => {
