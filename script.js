@@ -127,6 +127,7 @@ function openTab(evt, infoTabs) {
     document.getElementById(infoTabs).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
   
   document.getElementById("defaultOpen").click();
 
