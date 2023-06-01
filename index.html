@@ -13,6 +13,7 @@
     ></script>
   </head>
   <body>
+    <!-- NAVBAR START -->
       <nav class="navbar">
         <header> 
           <h1>PoCo Memory Card Game</h1>
@@ -24,11 +25,12 @@
           <button class="tablinks" data-target="instructure">How to play</button>
           <button class="tablinks" data-target="images">PowerTeam</button>
           <button class="tablinks" data-target="game">Start Game</button>
-        </div>
-        
+        </div>  
       </nav>
+    <!-- NAVBAR END -->
     <main class="container">
       <section class="tab-container">
+      <!-- HOME START -->
         <article class="tabcontent contenttable" id="home-page">
           <div class="home-page">
             <h2 class="greetings">Welcome to Memory Game!</h2>
@@ -38,6 +40,9 @@
             </p>
           </div>
         </article>
+      <!-- HOME END -->
+
+      <!-- INSTRUCTURE START -->
         <article class="tabcontent contenttable howtoplay" id="instructure">
           <ol>
             <li>Start the game with all cards facedown.</li>
@@ -49,11 +54,24 @@
             <li>Restart the game to shuffle the cards and reset the score.</li>
           </ol>
         </article>
+      <!-- INSTRUCTURE END -->
+
+        <!-- IMAGES START -->
         <article class="tabcontent contenttable" id="images">
           <div class="card-container">
           </div>
-        </article> 
+        </article>
+        <!-- IMAGES END -->
+        
+        <!-- START GAME TAB START -->
         <article class="tabcontent startgame " id="game">
+          <div class="actions">
+            <button onclick="startGame()">Start Game</button>
+            <span id="timer">
+              <!-- <i class=""></i> Here we can add an icon for time --> 
+              <b>02:00</b></span>
+          </div>
+          <!-- CARDS START -->
           <div class="wrapper">
               <ul class="cards">
                 <li class="card">
@@ -296,17 +314,9 @@
                 </li>
               </ul>
             </div>
-      </article>
-
-
-
-
-
-
-
-
-
-
+          <!-- CARDS END-->  
+          </article>
+          <!-- START GAME TAB END -->
       </section>
     </main>
     <footer>&copy; PowerCoders 2023</footer>

@@ -205,6 +205,26 @@ p {
   transform: rotateY(180deg);
 }
 
+.actions button{
+  margin-top: 1rem;
+  margin-right: 15px;
+  width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  color: rgb(97, 96, 96);
+  background: #ffff92;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1.5px solid darkgrey;
+}
+
+.actions button:hover{
+  color: black;
+  background-color: #fbed60;
+  box-shadow: rgb(112, 111, 111) 0px 5px 15px;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
   color: #555555;

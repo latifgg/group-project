@@ -113,7 +113,7 @@ firstOpenTabsButtons.forEach((button) => {
   });
 });
 
-//opanTab function for the contain
+//openTab function for the contain
 function openTab(evt, infoTabs) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -136,6 +136,8 @@ function openTab(evt, infoTabs) {
 let matched = 0;
 let cardOne, cardTwo;
 let disableDeck = false;
+let score = 0;
+let timer = 120; // 120 seconds
 
 function flipCard({target: clickedCard}) {
     if(cardOne !== clickedCard && !disableDeck) {
@@ -201,7 +203,7 @@ function getRandomImages() {
     matched = 0;
     disableDeck = false;
     cardOne = cardTwo = "";
-    let arr = images.concat(images); // Her resmi 2 kez ekleyerek 16 elemanlı bir dizi oluşturuyoruz
+    let arr = images.concat(images); // We create an array of 16 elements by adding each image 2 times
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
     cards.forEach((card, i) => {
       card.classList.remove("flip");
@@ -219,3 +221,58 @@ function getRandomImages() {
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+
+const timerElement = document.getElementById("timer");
+let countdown;
+
+function startTimer(duration) {
+  let timer = duration;
+  let minutes, seconds;
+
+  countdown = setInterval(() => {
+    minutes = Math.floor(timer / 60);
+    seconds = timer % 60;
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    timerElement.textContent = minutes + ":" + seconds;
+
+    if (--timer < 0) {
+      clearInterval(countdown);
+      endGame();
+    }
+  }, 1000);
+}
+
+function endGame() {
+  clearInterval(countdown);
+  calculateScore();
+  showScoreMessage(score);
+}
+
+function calculateScore() {
+  // Skor hesaplama mantığını buraya ekleyin
+  // Örnek olarak, her eşleştirme için +10 puan ekleyelim:
+  score = matched * 10;
+}
+
+function showScoreMessage(score) {
+  let message = "";
+  if (score >= 120) {
+    message = "Excellent score! You have an amazing memory!";
+  } else if (score >= 80) {
+    message = "Congratulations! You achieved a good score. Keep improving!";
+  } else if (score >= 60) {
+    message = "Well done! Your score is average, you can do even better!";
+  } else {
+    message = "Your score is not very high. You can improve by practicing more!";
+  }
+  alert(message);
+}
+
+function startGame() {
+  let selectedImages = getRandomImages();
+  shuffleCard(selectedImages);
+  startTimer(120); // 2 minutes (120 seconds)
+}
