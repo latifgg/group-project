@@ -179,14 +179,14 @@ function matchCards(img1, img2) {
 
 let images = [];
 
-for (let i = 1; i <= 30; i++) {
+for (let i = 1; i <= 31; i++) {
   let fileName = `images2/img-${i}.jpg`;
   images.push(fileName);
 }
 
 function getRandomImages() {
     let selectedImages = [];
-    while (selectedImages.length < 8) {
+    while (selectedImages.length < 16) {
       let randomIndex = Math.floor(Math.random() * images.length);
       let randomImage = images[randomIndex];
       if (!selectedImages.includes(randomImage)) {
